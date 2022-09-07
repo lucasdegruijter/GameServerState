@@ -4,7 +4,7 @@ module.exports = {
     execute(text) {
         //call a checkserver event every 5 seconds
         setInterval(function() {
-            console.log(text);
+            //console.log(text);
         }, 1000);
     },
 };

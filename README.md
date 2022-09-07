@@ -5,7 +5,7 @@ Track statuses of game servers in discord
 | Field            | Type             | Requirements        | Notes                                                                                                  |
 |------------------|------------------|---------------------|--------------------------------------------------------------------------------------------------------|
 | `server_id`      | int              | mandatory           | Unique key given to every game server                                                                  |
-| `name`           | string           | optional            | Informations displayed in the error messages on the console, also usefull to read through servers.json |
+| `title`          | string           | optional            | Title of the Embed message.                                                                            |
 | `game`           | string           | mandatory           | Game name                                                                                              |
 | `address`        | string           | mandatory           | Relative server address.                                                                               |
 | `port`           | int              | mandatory           | Server Port.                                                                                           |
@@ -15,7 +15,6 @@ Track statuses of game servers in discord
 | `direct_join`    | bool             | optional            | Set the link to directly join the server                                                               |
 | `color`          | string           | optional            | RGB color code : #5b8731                                                                               |
 | `country`        | bool  or  string | optional   autofill | Show the country field, set to false, to disable                                                       |
-| `title`          | string           | optional            | Title of the Embed message.                                                                            |
 | `public_address` | string           | optional            | Displayed address with port.                                                                           |
 | `password`       | string           | optional            | Server Password.                                                                                       |
 | `maxplayers`     | int              | optional            | Maximum number of players, overwrite auto-detection if defined.                                        |

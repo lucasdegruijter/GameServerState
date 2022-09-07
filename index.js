@@ -60,15 +60,24 @@ client.on('interactionCreate', async interaction => {
 });
 
 const Servers = sequelize.define('servers', {
-    serverid: {
-        type: Sequelize.INTEGER,
-        unique: true,
-    },
-    name: Sequelize.TEXT,
-    description: Sequelize.TEXT,
+    title: Sequelize.TEXT,
     game: Sequelize.STRING,
-
+    address: Sequelize.STRING,
+    port: Sequelize.INTEGER,
+    channel: Sequelize.INTEGER,
+    message_id: Sequelize.INTEGER,
+    image_url: Sequelize.STRING,
+    direct_join: Sequelize.TEXT,
+    color: Sequelize.STRING,
+    country: Sequelize.STRING,
+    public_address: Sequelize.STRING,
+    password: Sequelize.STRING,
+    max_players: Sequelize.STRING,
 });
+
+exports.Servers = Servers;
+
+Servers.sync();
 
 // Login to Discord with your client's token
 client.login(token);
