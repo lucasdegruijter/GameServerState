@@ -67,7 +67,7 @@ const Servers = sequelize.define('servers', {
     name: Sequelize.TEXT,
     description: Sequelize.TEXT,
     game: Sequelize.STRING,
-    
+
 });
 
 // Login to Discord with your client's token
