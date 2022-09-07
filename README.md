@@ -6,7 +6,7 @@ Track statuses of game servers in discord
 |------------------|------------------|---------------------|--------------------------------------------------------------------------------------------------------|
 | `server_id`      | int              | mandatory           | Unique key given to every game server                                                                  |
 | `name`           | string           | optional            | Informations displayed in the error messages on the console, also usefull to read through servers.json |
-| `game`           | string           | mandatory           | For `gamedigquery` see https://github.com/gamedig/node-gamedig                                         |
+| `game`           | string           | mandatory           | Game name                                                                                              |
 | `address`        | string           | mandatory           | Relative server address.                                                                               |
 | `port`           | int              | mandatory           | Server Port.                                                                                           |
 | `channel`        | int              | mandatory           | Discord channel id for the game.                                                                       |
