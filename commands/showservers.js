@@ -8,11 +8,10 @@ module.exports = {
     async execute(interaction) {
         const servers = await index.Servers.findAll();
 
-        servers.forEach(displayServer)
-
-        function displayServer(server)
+        for (const server of servers)
         {
-            interaction.user.send('test');
+            const title = server.get('title')
+            interaction.user.send(title);
         }
 
         console.log(servers);
