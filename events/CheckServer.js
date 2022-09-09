@@ -1,3 +1,5 @@
+const index = require('../index')
+
 module.exports = {
     name: 'CheckServer',
     once: true,

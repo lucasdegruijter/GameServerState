@@ -72,7 +72,8 @@ const Servers = sequelize.define('servers', {
     country: Sequelize.STRING,
     public_address: Sequelize.STRING,
     password: Sequelize.STRING,
-    max_players: Sequelize.STRING,
+    max_players: Sequelize.INTEGER,
+    query_type: Sequelize.STRING,
 });
 
 exports.Servers = Servers;
